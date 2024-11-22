@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# **RBAC Admin Dashboard**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An **Admin Dashboard** application for managing **Users**, **Roles**, and **Permissions** using React and Redux. This dashboard allows administrators to:
 
-## Available Scripts
+1. Add, edit, and delete users.
+2. Assign roles to users and manage their statuses (Active/Inactive).
+3. Define roles with customizable permissions.
+4. Manage and view permissions dynamically.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **1. User Management**
+- Add, edit, and delete users.
+- Assign roles to users.
+- Display a list of users along with their roles and permissions.
+- **Manage user status**: Toggle between Active and Inactive status for each user.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **2. Role Management**
+- Add, edit, and delete roles.
+- Assign permissions to roles dynamically.
+- Display a list of roles with their associated permissions.
 
-### `npm test`
+### **3. Permissions Management**
+- View and manage all available permissions.
+- Assign permissions to roles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **4. Quick Actions**
+- Quick access buttons for managing users, roles, and permissions.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **How to Use**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **1. Manage Users**
+- Navigate to `/users` to:
+  - Add new users.
+  - Edit existing users.
+  - Assign roles to users.
+  - Toggle user status (Active/Inactive).
+  - Delete users.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **2. Manage Roles**
+- Navigate to `/roles` to:
+  - Add new roles with permissions.
+  - Edit existing roles.
+  - Delete roles.
 
-### `npm run eject`
+### **3. View Permissions**
+- Navigate to `/permissions` to view all available permissions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **How to Toggle User Status**
+1. Go to the **Manage Users** page.
+2. Find the user whose status you want to change.
+3. Click the button under the **Status** column:
+   - Green for "Active."
+   - Red for "Inactive."
+4. The user's status will toggle between "Active" and "Inactive."
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Technologies Used**
+- **Frontend**: React, React Router, Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Tooling**: ESLint, Prettier

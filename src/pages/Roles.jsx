@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addRole, editRole, deleteRole } from '../Features/rolesSlice'; // Adjust path if needed
+import { addRole, editRole, deleteRole } from '../Features/rolesSlice';
 
 const Roles = () => {
   const [form, setForm] = useState({ name: '', permissions: [] });
@@ -9,7 +9,7 @@ const Roles = () => {
   const permissions = useSelector((state) => state.permissions);
   const dispatch = useDispatch();
 
-  // Prefill form when editing a role
+
   useEffect(() => {
     if (editingRole) {
       setForm(editingRole);

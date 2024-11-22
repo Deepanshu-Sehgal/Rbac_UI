@@ -9,7 +9,6 @@ const Dashboard = () => {
   const roles = useSelector((state) => state.roles);
   const dispatch = useDispatch();
 
-  // Helper function to get permissions for a role
   const getPermissionsForRole = (roleName) => {
     const role = roles.find((r) => r.name === roleName);
     return role?.permissions || [];

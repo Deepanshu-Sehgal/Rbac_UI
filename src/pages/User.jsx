@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteUser, toggleStatus } from '../Features/UserSlice'; // Ensure the correct path is used
+import { deleteUser, toggleStatus } from '../Features/UserSlice'; 
 import AddEditUser from '../Components/AddEditUser';
 
 const User = () => {
